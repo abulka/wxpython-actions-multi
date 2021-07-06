@@ -1,7 +1,9 @@
 name: multi project wxpython app built on mac
 on:
   push:
-    branches: [ main ]
+    # branches: [ main ]
+    tags:
+      - 'v*'
 jobs:
   build:
     runs-on: macos-latest
