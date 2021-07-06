@@ -28,24 +28,29 @@ jobs:
         ls -l subdir/
         ls -l subdir/mainproj/
 
-    - name: Setup Python please
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.8    
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install wxpython
-        pip install pyinstaller
-        pip install -r subdir/mainproj/requirements.txt
-    - name: Run Python and print version_info
-      run: |
-        python -c "import sys; print(sys.version_info)"
-        uname -a
+    # - name: Setup Python please
+    #   uses: actions/setup-python@v2
+    #   with:
+    #     python-version: 3.8    
+    # - name: Install dependencies
+    #   run: |
+    #     python -m pip install --upgrade pip
+    #     pip install wxpython
+    #     pip install pyinstaller
+    #     pip install -r subdir/mainproj/requirements.txt
+    # - name: Run Python and print version_info
+    #   run: |
+    #     python -c "import sys; print(sys.version_info)"
+    #     uname -a
 
     - name: runsimple
       run: |
         cd subdir/mainproj/
+        ls -l
+        ls bin
+        ls .bin/
+        ls -l bin/runsimple
+        ls -l ./bin/runsimple
         ./bin/runsimple
 
     - name: Build executable using Pyinstaller
