@@ -1,9 +1,17 @@
+# To trigger the workflow on each push, branches: [ main ]
+# To trigger the workflow on push of tags beginning with v, tags: ['v*']
+# then
+# git tag v1.0
+# git push origin v1.0
+# or
+# git tag -a v1.0
+# git push --follow-tags
+
 name: multi project wxpython app built on mac
 on:
   push:
     # branches: [ main ]
-    tags:
-      - 'v*'  # git push origin tag_a
+    tags: ['v*']
 jobs:
   build:
     runs-on: macos-latest
