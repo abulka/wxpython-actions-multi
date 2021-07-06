@@ -14,19 +14,26 @@ jobs:
       with:
         path: subdir/mainproj/
 
-    - name: Check out my other private repo
+    - name: Check out my other public repo
       uses: actions/checkout@v2
       with:
         repository: abulka/relationship-manager
-        # token: ${{ secrets.my_pat }}
         path: relationship-manager/
+
+    - name: Check out my other private repo
+      uses: actions/checkout@v2
+      with:
+        repository: abulka/ogl2
+        token: ${{ secrets.my_pat }}
+        path: ogl2/
 
     - name: View resulting directory structure
       run: |
         ls -l
-        ls -l relationship-manager/
         ls -l subdir/
         ls -l subdir/mainproj/
+        ls -l relationship-manager/
+        ls -l ogl2/
 
     - name: Setup Python please
       uses: actions/setup-python@v2
