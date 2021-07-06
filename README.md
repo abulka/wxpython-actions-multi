@@ -44,13 +44,40 @@ for Pyinstaller to find everything.
 
 # Tags
 
+In the workflow file:
+
 - To trigger the workflow on each push, branches: [ main ]
 - To trigger the workflow on push of tags beginning with v, tags: ['v*']
 
-then
+e.g.
+
+```yml
+name: multi project wxpython app built on mac
+on:
+  push:
+    # branches: [ main ]
+    tags: ['v*']
+```
+
+## To trigger a github actions workflow run
+
+when you have set up workflow to run on tags eing pushed,
 
     git tag v1.0
     git push origin v1.0
+
+or better, use an annotated tag (see explanation below)
+
+    git tag -a v1.0
+    git push --follow-tags
+
+## To trigger via vscode commands
+In vscode, creating a tag seems only to create a *lightweight* tag, unless you add a description.
+
+- in vscode running the command `Git: Create Tag` - note entering a `message` when creating a tag via the UI will create an annotated tag
+- in vsode running the command `Git: Push (follow tags)` 
+
+## An aside on tags...
 
 though interesting that `electron-actions1` has
 
@@ -113,21 +140,18 @@ While you can push tags, you probably:
 - are using a lightweight tag, and `git push --tags`. (Not recommended!)
 - are using an annotated tag, and `git push --follow-tags`.
 
-## Andy Summary:
+## Andy Summary of tags:
 Two types of tags, lightweight (normal) and annotated. 
 
 Use lightweight for local, and don't pollute the remote with these.
 
-For remote use pass `-a` when creating a tag, and it will be pushed when you
+For remote use pass `-a` when creating a tag, 
+
+    git tag -a <tagname>              => annotated tag, will prompt for mesage
+    git tag -a -m <msg> <tagname>     => annotated tag
+    
+and it will be pushed when you
 
     git push --follow-tags
 
-## So to trigger a github actions workflow run
-
-    git tag -a v1.n
-    git push --follow-tags
-
-In vscode, creating a tag seems only to create a *lightweight* tag.
-
-Possibly if add a description?
 
