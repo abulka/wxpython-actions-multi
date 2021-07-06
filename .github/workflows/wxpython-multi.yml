@@ -48,8 +48,8 @@ jobs:
         cd subdir/mainproj/
         ls -l
         ls bin
-        ls .bin/
-        ls -l bin/runsimple
+        ls -l ./bin/
+        ls bin/runsimple
         ls -l ./bin/runsimple
         ./bin/runsimple
 
