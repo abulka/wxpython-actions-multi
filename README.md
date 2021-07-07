@@ -159,3 +159,19 @@ and it will be pushed when you
     git push --follow-tags
 
 
+# action-gh-release@v1 - wildcards
+
+When referring to artifacts that are really directories (e.g. mac .app) you might get an error
+🤔 rubber-band-macos-v1.85,rubber-band-windows-v1.85 not include valid file. 
+This is because these are actually artifact directories! 
+You need to add `/*` to grab the directory contents. E.g. this works ok:
+```yml
+- name: Release
+    uses: softprops/action-gh-release@v1
+    env:
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    with:
+    files: |
+        rubber-band-macos-${{ env.TAG }}/*
+        rubber-band-windows-${{ env.TAG }}/*
+```

@@ -119,33 +119,17 @@ jobs:
         - run: |
             ls -l
             ls -l rubber-band-macos-${{ env.TAG }}
+
             # fix loss of executable permission issue https://github.com/actions/upload-artifact#maintaining-file-permissions-and-case-sensitive-files 
             chmod +x rubber-band-macos-${{ env.TAG }}/rubber_band_async.app/Contents/MacOS/rubber_band_async
+            
             # remove the useless exe but leave the .app
             rm rubber-band-macos-${{ env.TAG }}/rubber_band_async
-            ls -l rubber-band-macos-${{ env.TAG }}
-
+            
         - name: Zip up the artifacts
           run: |
             zip -r rubber-band-macos-${{ env.TAG }}.zip rubber-band-macos-${{ env.TAG }}
             zip -r rubber-band-windows-${{ env.TAG }}.zip rubber-band-windows-${{ env.TAG }}
-            ls -l
-            unzip -l rubber-band-macos-${{ env.TAG }}.zip 
-
-
-        # weird that wildcards like rubber-band-mac* don't seem to work when specifying files?
-        # even specifying files not working?
-        # 🤔 rubber-band-macos-v1.85,rubber-band-windows-v1.85 not include valid file.
-        # probably cos these are actually artifact directories!
-        # NOW it works OK
-        # - name: Release
-        #   uses: softprops/action-gh-release@v1
-        #   env:
-        #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        #   with:
-        #     files: |
-        #       rubber-band-macos-${{ env.TAG }}/*
-        #       rubber-band-windows-${{ env.TAG }}/*
 
         - name: Release
           uses: softprops/action-gh-release@v1
