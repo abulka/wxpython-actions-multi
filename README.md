@@ -1,5 +1,7 @@
 # wxpython-actions-multi
 
+Version: 1.77.0
+
 An experiment re checking out not only this project, but another project, then building an exe from combining the two.
 
 On github, If we check out this project into `mainproj` then the other project into 
@@ -149,7 +151,7 @@ For remote use pass `-a` when creating a tag,
 
     git tag -a <tagname>              => annotated tag, will prompt for mesage
     git tag -a -m <msg> <tagname>     => annotated tag
-    
+
 and it will be pushed when you
 
     git push --follow-tags
