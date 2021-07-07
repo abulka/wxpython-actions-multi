@@ -1,6 +1,6 @@
 # wxpython-actions-multi
 
-Version: 1.77.0
+Version: 1.77
 
 An experiment re checking out not only this project, but another project, then building an exe from combining the two.
 
