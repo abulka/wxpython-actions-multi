@@ -121,10 +121,12 @@ jobs:
         # weird that wildcards like rubber-band-mac* don't seem to work when specifying files?
         # even specifying files not working?
         # 🤔 rubber-band-macos-v1.85,rubber-band-windows-v1.85 not include valid file.
+        # probably cos these are actually artifact directories!
         - name: Release
           uses: softprops/action-gh-release@v1
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           with:
             files: |
-              rubber-band-macos-${{ env.TAG }}
+              rubber-band-macos-${{ env.TAG }}/*
+              rubber-band-windows-${{ env.TAG }}/*
