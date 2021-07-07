@@ -101,23 +101,19 @@ jobs:
       runs-on: ubuntu-latest
       steps:
 
-        # does this env var survive from the previous job?
-        - run: |
-            echo ${{ env.TAG }}
-
-        - name: Get the tag name
+        - name: Get the tag name  # env vars do not survive from previous jobs
           shell: bash
           run: echo "TAG=${GITHUB_REF/refs\/tags\//}" >> $GITHUB_ENV
 
         - uses: actions/download-artifact@v2
           with:
-            name: rubber-band-macos-${{ env.TAG }}  # to this filename
-            path: rubber-band-macos-latest-${{ env.TAG }}  # from this artifact name
+            name: rubber-band-macos-latest-${{ env.TAG }}  # from this artifact name
+            path: rubber-band-macos-${{ env.TAG }}  # to this filename
 
         - uses: actions/download-artifact@v2
           with:
-            name: rubber-band-windows-${{ env.TAG }}  # to this filename
-            path: rubber-band-windows-latest-${{ env.TAG }}  # from this artifact name
+            name: rubber-band-windows-latest-${{ env.TAG }}  # from this artifact name
+            path: rubber-band-windows-${{ env.TAG }}  # to this filename
 
         - run: |
             ls -l
