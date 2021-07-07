@@ -65,16 +65,20 @@ jobs:
     #     cp README.md dist/Readme.txt
     #     ls -l dist/
 
-    - name: Install Innosetup
-      run: |
-        choco install innosetup
-        iscc
-        
-    # - name: Run Innosetup
+    # - name: Install Innosetup - no need cos its already installed
     #   run: |
-    #     cd subdir/mainproj/
-    #     iscc ..\ogl2\bin\buildwin_setupexe.iss
+    #     choco install innosetup
+    #     iscc
+        
+    - name: List 
+      shell: bash
+      run: ls -l
 
+    - name: Run Innosetup
+      if: matrix.os == 'windows_latest'
+      run: |
+        cd subdir/mainproj/
+        iscc ..\ogl2\bin\buildwin_setupexe.iss
 
   #   - name: Get the tag name
   #     shell: bash
