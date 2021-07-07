@@ -6,6 +6,12 @@
 # or
 # git tag -a v1.0
 # git push --follow-tags
+# 
+# If using tbump (tbump willl do a push of the annotated tag it creates, but not a --follow-tags, which is still ok)
+# tbump 1.77                    (specify what the next version is, current version stored in tbump.toml)
+# Diagnostic tbump uses:
+# tbump 1.77 --only-patch       (no git stuff)
+# tbump 1.77 --no-push          (do git stuff, but don't do the final push)
 
 name: multi project wxpython app built on mac
 on:
@@ -77,3 +83,11 @@ jobs:
         # The act of downloading zips up the artifact and adds the .zip to the downloaded file
         name: rubber-band-${{ matrix.os }}
         path: subdir/mainproj/dist/
+
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      if: startsWith(github.ref, 'refs/tags/')
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+          files: subdir/mainproj/dist/
