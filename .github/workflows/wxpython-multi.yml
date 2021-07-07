@@ -19,7 +19,7 @@ on:
     # branches: [ main ]
     tags: ['v*']
 jobs:
-  build:
+  build-for-mac:
     runs-on: macos-latest
     steps:
 
@@ -81,13 +81,41 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         # The act of downloading zips up the artifact and adds the .zip to the downloaded file
-        name: rubber-band-${{ matrix.os }}
+        name: rubber-band-mac
         path: subdir/mainproj/dist/
 
-    - name: Release
-      uses: softprops/action-gh-release@v1
-      if: startsWith(github.ref, 'refs/tags/')
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-          files: subdir/mainproj/dist/
+    # - name: Release
+    #   uses: softprops/action-gh-release@v1
+    #   if: startsWith(github.ref, 'refs/tags/')
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #   with:
+    #       files: subdir/mainproj/dist/*
+
+  # After the matrix (if any) is complete, have to 'download' all the assets in order to release them
+  release:
+      needs: [build-for-mac]
+      runs-on: ubuntu-latest
+      steps:
+        - name: Get the version
+          id: get_version
+          run: echo ::set-output name=VERSION::${GITHUB_REF#refs/tags/cli-}
+        - uses: actions/download-artifact@v2
+          with:
+            name: cli-binary-linux
+            path: cli-binary-linux
+        - uses: actions/download-artifact@v2
+          with:
+            name: rubber-band-mac
+            path: rubber-band-mac
+        - run: |
+            ls -l
+            mv rubber-band-mac rubber-band-mac-${{ steps.get_version.outputs.VERSION }}
+            ls -l
+        - name: Release
+          uses: softprops/action-gh-release@v1
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          with:
+            files: |
+              rubber-band-mac*
