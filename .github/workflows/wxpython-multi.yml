@@ -100,10 +100,10 @@ jobs:
         - name: Get the version
           id: get_version
           run: echo ::set-output name=VERSION::${GITHUB_REF#refs/tags/cli-}
-        - uses: actions/download-artifact@v2
-          with:
-            name: cli-binary-linux
-            path: cli-binary-linux
+        # - uses: actions/download-artifact@v2
+        #   with:
+        #     name: cli-binary-linux
+        #     path: cli-binary-linux
         - uses: actions/download-artifact@v2
           with:
             name: rubber-band-mac
