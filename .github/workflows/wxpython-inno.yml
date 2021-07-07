@@ -72,10 +72,12 @@ jobs:
         
     - name: List 
       shell: bash
-      run: ls -l
+      run: |
+        ls -l
+        echo ${{ runner.os }}
 
     - name: Run Innosetup
-      if: matrix.os == 'windows-latest'
+      if: ${{ runner.os == 'Windows' }}
       run: |
         cd subdir/mainproj/
         iscc ..\ogl2\bin\buildwin_setupexe.iss
