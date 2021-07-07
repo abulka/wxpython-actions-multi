@@ -97,21 +97,19 @@ jobs:
       needs: [build-for-mac]
       runs-on: ubuntu-latest
       steps:
-        - name: Get the version
-          id: get_version
-          run: echo ::set-output name=VERSION::${GITHUB_REF#refs/tags/cli-}
-        # - uses: actions/download-artifact@v2
-        #   with:
-        #     name: cli-binary-linux
-        #     path: cli-binary-linux
+        - name: Get the tag name
+          shell: bash
+          run: echo "TAG=${GITHUB_REF/refs\/tags\//}" >> $GITHUB_ENV
+
         - uses: actions/download-artifact@v2
           with:
-            name: rubber-band-mac
-            path: rubber-band-mac
+            name: rubber-band-mac  # to this filename
+            path: rubber-band-mac  # from this artifact name
         - run: |
             ls -l
-            mv rubber-band-mac rubber-band-mac-${{ steps.get_version.outputs.VERSION }}
+            mv rubber-band-mac rubber-band-mac-${{ env.TAG }}
             ls -l
+            ls -l rubber-band-mac*
         - name: Release
           uses: softprops/action-gh-release@v1
           env:
