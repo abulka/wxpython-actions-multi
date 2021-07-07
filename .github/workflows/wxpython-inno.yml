@@ -75,7 +75,7 @@ jobs:
       run: ls -l
 
     - name: Run Innosetup
-      if: matrix.os == 'windows_latest'
+      if: matrix.os == 'windows-latest'
       run: |
         cd subdir/mainproj/
         iscc ..\ogl2\bin\buildwin_setupexe.iss
