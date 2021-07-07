@@ -118,12 +118,15 @@ jobs:
 
         - run: |
             ls -l
+            ls -l rubber-band-macos-${{ env.TAG }}
 
         - name: Zip up the artifacts
           run: |
-            zip -r rubber-band-macos-${{ env.TAG }}.zip rubber-band-macos-${{ env.TAG }}/
-            zip -r rubber-band-windows-${{ env.TAG }}.zip rubber-band-windows-${{ env.TAG }}/
+            zip -r rubber-band-macos-${{ env.TAG }}.zip rubber-band-macos-${{ env.TAG }}
+            zip -r rubber-band-windows-${{ env.TAG }}.zip rubber-band-windows-${{ env.TAG }}
             ls -l
+            unzip -l rubber-band-macos-${{ env.TAG }}.zip 
+
 
         # weird that wildcards like rubber-band-mac* don't seem to work when specifying files?
         # even specifying files not working?
