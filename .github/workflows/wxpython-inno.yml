@@ -79,7 +79,9 @@ jobs:
     - name: Run Innosetup
       if: ${{ runner.os == 'Windows' }}
       run: |
-        cd subdir/mainproj/
+        cd subdir\mainproj
+        echo hi
+        dir
         iscc ..\ogl2\bin\buildwin_setupexe.iss
 
   #   - name: Get the tag name
