@@ -81,6 +81,7 @@ jobs:
       run: |
         cd subdir/mainproj/
         pyinstaller rubber_band_async_custom.spec
+        cp README.md dist/Readme.txt
         ls -l dist/
 
     - name: Get the tag name
@@ -108,25 +109,41 @@ jobs:
         - uses: actions/download-artifact@v2
           with:
             name: rubber-band-macos-latest-${{ env.TAG }}  # from this artifact name
-            path: rubber-band-macos-${{ env.TAG }}  # to this filename
+            path: rubber-band-macos-${{ env.TAG }}  # to this filename or dir
 
         - uses: actions/download-artifact@v2
           with:
             name: rubber-band-windows-latest-${{ env.TAG }}  # from this artifact name
-            path: rubber-band-windows-${{ env.TAG }}  # to this filename
+            path: rubber-band-windows-${{ env.TAG }}  # to this filename or dir
 
         - run: |
+            ls -l
+
+        - name: Zip up the artifacts
+          run: |
+            zip -r rubber-band-macos-${{ env.TAG }}.zip rubber-band-macos-${{ env.TAG }}/
+            zip -r rubber-band-windows-${{ env.TAG }}.zip rubber-band-windows-${{ env.TAG }}/
             ls -l
 
         # weird that wildcards like rubber-band-mac* don't seem to work when specifying files?
         # even specifying files not working?
         # 🤔 rubber-band-macos-v1.85,rubber-band-windows-v1.85 not include valid file.
         # probably cos these are actually artifact directories!
+        # NOW it works OK
+        # - name: Release
+        #   uses: softprops/action-gh-release@v1
+        #   env:
+        #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        #   with:
+        #     files: |
+        #       rubber-band-macos-${{ env.TAG }}/*
+        #       rubber-band-windows-${{ env.TAG }}/*
+
         - name: Release
           uses: softprops/action-gh-release@v1
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           with:
             files: |
-              rubber-band-macos-${{ env.TAG }}/*
-              rubber-band-windows-${{ env.TAG }}/*
+              rubber-band-macos-${{ env.TAG }}.zip
+              rubber-band-windows-${{ env.TAG }}.zip
