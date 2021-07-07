@@ -119,6 +119,11 @@ jobs:
         - run: |
             ls -l
             ls -l rubber-band-macos-${{ env.TAG }}
+            # fix loss of executable permission issue https://github.com/actions/upload-artifact#maintaining-file-permissions-and-case-sensitive-files 
+            chmod +x rubber-band-macos-${{ env.TAG }}/rubber_band_async.app/Contents/MacOS/rubber_band_async
+            # remove the useless exe but leave the .app
+            rm rubber-band-macos-${{ env.TAG }}/rubber_band_async
+            ls -l rubber-band-macos-${{ env.TAG }}
 
         - name: Zip up the artifacts
           run: |
