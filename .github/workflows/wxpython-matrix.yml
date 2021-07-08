@@ -140,7 +140,7 @@ jobs:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           with:
             # draft: true
-            draft: ${{ ! startsWith(env.TAG, 'v') }}
+            draft: ${{ !startsWith(env.TAG, 'v') }}
             files: |
               rubber-band-macos-${{ env.TAG }}.zip
               rubber-band-windows-${{ env.TAG }}.zip

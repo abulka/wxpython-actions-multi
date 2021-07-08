@@ -1,6 +1,6 @@
 FOUND_RELMGR=True
 
-APP_VERSION = 1.93
+APP_VERSION = 1.94
 BETA = "1"  # leave blank to turn off beta
 APP_VERSION_FULL = f"{APP_VERSION}"
 if BETA:
