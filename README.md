@@ -2,6 +2,8 @@
 
 Version: 1.94
 
+non beta - real
+
 Latest versions can downloaded from https://github.com/abulka/wxpython-actions-multi/releases/latest
 
 An experiment re checking out not only this project, but another project, then building an exe from combining the two.
