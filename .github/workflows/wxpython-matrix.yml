@@ -130,13 +130,17 @@ jobs:
           run: |
             zip -r rubber-band-macos-${{ env.TAG }}.zip rubber-band-macos-${{ env.TAG }}
             zip -r rubber-band-windows-${{ env.TAG }}.zip rubber-band-windows-${{ env.TAG }}
+            echo "TAG is ${{ env.TAG }}"
+            echo "is a v release ${{ startsWith(env.TAG, 'v') }}"
+            echo "is a xx release ${{ startsWith(env.TAG, 'xx') }}"
 
         - name: Release
           uses: softprops/action-gh-release@v1
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           with:
-            draft: true
+            # draft: true
+            draft: startsWith(env.TAG, 'v')
             files: |
               rubber-band-macos-${{ env.TAG }}.zip
               rubber-band-windows-${{ env.TAG }}.zip
