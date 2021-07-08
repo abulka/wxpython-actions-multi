@@ -1,8 +1,8 @@
 # wxpython-actions-multi
 
-Version: 1.94
+Version: 1.93
 
-non beta - real
+Non beta - real
 
 Latest versions can downloaded from https://github.com/abulka/wxpython-actions-multi/releases/latest
 
