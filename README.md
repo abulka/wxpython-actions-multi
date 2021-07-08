@@ -1,6 +1,6 @@
 # wxpython-actions-multi
 
-Version: 1.93
+Version: 1.94
 
 Non beta - real
 
