@@ -118,17 +118,25 @@ def main():
     app.MainLoop()
     # del app
 
-def main_async():
-    # see https://github.com/sirk390/wxasync
+# def main_async():
+#     # see https://github.com/sirk390/wxasync
+#     app = WxAsyncApp()
+#     frame = SelectableFrame()
+#     frame.Show(True)
+#     app.SetTopWindow(frame)
+#     loop = get_event_loop()
+#     loop.run_until_complete(app.MainLoop())
+
+async def main_async_modern():
     app = WxAsyncApp()
     frame = SelectableFrame()
     frame.Show(True)
     app.SetTopWindow(frame)
-    loop = get_event_loop()
-    loop.run_until_complete(app.MainLoop())
+    await app.MainLoop()
 
 if __name__ == "__main__":
     if ASYNC_VERSION:
-        main_async()
+        # main_async()
+        asyncio.run(main_async_modern())
     else:
         main()
