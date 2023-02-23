@@ -1,0 +1,477 @@
+2023-02-23 05:51:47.320 Starting Snapcraft 7.2.9
+2023-02-23 05:51:47.330 lifecycle command: 'pack', arguments: Namespace(bind_ssh=False, build_for=None, debug=False, destructive_mode=False, directory=None, enable_developer_debug=False, enable_experimental_extensions=False, enable_experimental_target_arch=False, enable_experimental_ua_services=False, enable_manifest=False, http_proxy=None, https_proxy=None, manifest_image_information=None, output=None, provider=None, target_arch=None, ua_token=None, use_lxd=False)
+2023-02-23 05:51:47.330 command: pack, arguments: Namespace(bind_ssh=False, build_for=None, debug=False, destructive_mode=False, directory=None, enable_developer_debug=False, enable_experimental_extensions=False, enable_experimental_target_arch=False, enable_experimental_ua_services=False, enable_manifest=False, http_proxy=None, https_proxy=None, manifest_image_information=None, output=None, provider=None, target_arch=None, ua_token=None, use_lxd=False)
+2023-02-23 05:51:47.379 CPU count (from process affinity): 2
+2023-02-23 05:51:47.379 Invalid SNAPCRAFT_MAX_PARALLEL_BUILD_COUNT value
+2023-02-23 05:51:47.379 Running on amd64 for amd64
+2023-02-23 05:51:47.401 Checking build provider availability
+2023-02-23 05:51:48.363 Retrieved snap config: {}
+2023-02-23 05:51:48.363 Using default provider 'lxd' on linux system.
+2023-02-23 05:51:48.369 Emitter: Pausing control of the terminal
+2023-02-23 05:52:01.330 Emitter: Resuming control of the terminal
+2023-02-23 05:55:38.043 Launching instance...
+2023-02-23 06:03:57.881 Emitter: Pausing control of the terminal
+2023-02-23 06:15:48.196 Emitter: Resuming control of the terminal
+2023-02-23 06:15:53.307 Logs retrieved from managed instance:
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.242 Starting Snapcraft 7.2.9
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.290 lifecycle command: 'pack', arguments: Namespace(bind_ssh=False, build_for='amd64', debug=False, destructive_mode=False, directory=None, enable_developer_debug=False, enable_experimental_extensions=False, enable_experimental_target_arch=False, enable_experimental_ua_services=False, enable_manifest=False, http_proxy=None, https_proxy=None, manifest_image_information=None, output=None, provider=None, target_arch=None, ua_token=None, use_lxd=False)
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.291 command: pack, arguments: Namespace(bind_ssh=False, build_for='amd64', debug=False, destructive_mode=False, directory=None, enable_developer_debug=False, enable_experimental_extensions=False, enable_experimental_target_arch=False, enable_experimental_ua_services=False, enable_manifest=False, http_proxy=None, https_proxy=None, manifest_image_information=None, output=None, provider=None, target_arch=None, ua_token=None, use_lxd=False)
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.490 CPU count (from process affinity): 2
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.491 Invalid SNAPCRAFT_MAX_PARALLEL_BUILD_COUNT value
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.491 Running on amd64 for amd64
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.520 Initializing parts lifecycle
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.531 is_snap: True, SNAP_NAME set to snapcraft
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.548 process copy-stuff:Step.PULL
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.549 add action copy-stuff:Step.PULL(ActionType.RUN)
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.568 process gnome/sdk:Step.PULL
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.568 add action gnome/sdk:Step.PULL(ActionType.RUN)
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.569 process rubber:Step.PULL
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.569 add action rubber:Step.PULL(ActionType.RUN)
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.569 process copy-stuff:Step.OVERLAY
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.569 add action copy-stuff:Step.OVERLAY(ActionType.RUN)
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.577 process gnome/sdk:Step.OVERLAY
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.578 add action gnome/sdk:Step.OVERLAY(ActionType.RUN)
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.595 process rubber:Step.OVERLAY
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.659 add action rubber:Step.OVERLAY(ActionType.RUN)
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.662 process copy-stuff:Step.BUILD
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.662 add action copy-stuff:Step.BUILD(ActionType.RUN)
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.679 process gnome/sdk:Step.BUILD
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.679 add action gnome/sdk:Step.BUILD(ActionType.RUN)
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.684 process rubber:Step.BUILD
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.684 add action rubber:Step.BUILD(ActionType.RUN)
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.685 process copy-stuff:Step.STAGE
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.685 add action copy-stuff:Step.STAGE(ActionType.RUN)
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.687 process gnome/sdk:Step.STAGE
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.687 add action gnome/sdk:Step.STAGE(ActionType.RUN)
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.688 process rubber:Step.STAGE
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.688 add action rubber:Step.STAGE(ActionType.RUN)
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.688 process copy-stuff:Step.PRIME
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.688 add action copy-stuff:Step.PRIME(ActionType.RUN)
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.688 process gnome/sdk:Step.PRIME
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.688 add action gnome/sdk:Step.PRIME(ActionType.RUN)
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.689 process rubber:Step.PRIME
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.689 add action rubber:Step.PRIME(ActionType.RUN)
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.690 Executing parts lifecycle...
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.696 ignore patterns: ['*.snap']
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.711 ignore patterns: ['*.snap']
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.711 plugin build packages: {'gcc', 'make'}
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.711 part build snaps: ['gnome-42-2204-sdk']
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.712 ignore patterns: ['*.snap']
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.712 plugin build packages: {'findutils', 'python3-venv', 'python3-dev'}
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:09.715 Requested build-packages: ['findutils', 'gcc', 'make', 'python3-dev', 'python3-venv']
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:30.523 Marking make (and its dependencies) to be fetched
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:30.524 package: make
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:30.552 Marking python3-venv (and its dependencies) to be fetched
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:30.553 package: python3-venv
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:30.641 Marking findutils (and its dependencies) to be fetched
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:30.641 package: findutils
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:30.705 Marking gcc (and its dependencies) to be fetched
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:30.706 package: gcc
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:30.790 Marking python3-dev (and its dependencies) to be fetched
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:30.791 package: python3-dev
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:30.985 Executing: ['apt-get', 'update']
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:31.801 :: Hit:1 http://security.ubuntu.com/ubuntu jammy-security InRelease
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:32.288 :: Hit:2 http://archive.ubuntu.com/ubuntu jammy InRelease
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:32.633 :: Get:3 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:34.116 :: Get:4 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [107 kB]
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:34.750 :: Fetched 226 kB in 3s (67.0 kB/s)
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:45.518 :: Reading package lists...
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:45.636 Installing packages: findutils gcc make python3-dev python3-venv
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:46.196 :: Reading package lists...
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:47.492 :: Building dependency tree...
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:47.493 :: Reading state information...
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:49.241 :: findutils is already the newest version (4.8.0-1ubuntu3).
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:49.241 :: gcc is already the newest version (4:11.2.0-1ubuntu1).
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:49.241 :: gcc set to manually installed.
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:49.241 :: make is already the newest version (4.3-4.1build1).
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:49.242 :: make set to manually installed.
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:49.243 :: The following additional packages will be installed:
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:49.250 :: libexpat1-dev libjs-jquery libjs-sphinxdoc libjs-underscore libmpdec3
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:49.250 :: libpython3-dev libpython3-stdlib libpython3.10 libpython3.10-dev
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:49.349 :: libpython3.10-minimal libpython3.10-stdlib media-types python3
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:49.352 :: python3-distutils python3-lib2to3 python3-minimal python3-pip-whl
+2023-02-23 06:15:53.308 :: 2023-02-23 11:04:49.352 :: python3-setuptools-whl python3.10 python3.10-dev python3.10-minimal
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:49.363 :: python3.10-venv zlib1g zlib1g-dev
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:49.376 :: Suggested packages:
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:49.376 :: python3-doc python3-tk python3.10-doc binfmt-support
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:49.377 :: Recommended packages:
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:49.377 :: javascript-common
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:50.082 :: The following NEW packages will be installed:
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:50.083 :: libexpat1-dev libjs-jquery libjs-sphinxdoc libjs-underscore libmpdec3
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:50.083 :: libpython3-dev libpython3-stdlib libpython3.10 libpython3.10-dev
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:50.083 :: libpython3.10-minimal libpython3.10-stdlib media-types python3 python3-dev
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:50.083 :: python3-distutils python3-lib2to3 python3-minimal python3-pip-whl
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:50.083 :: python3-setuptools-whl python3-venv python3.10 python3.10-dev
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:50.083 :: python3.10-minimal python3.10-venv zlib1g-dev
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:50.088 :: The following packages will be upgraded:
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:50.088 :: zlib1g
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:50.867 :: 1 upgraded, 25 newly installed, 0 to remove and 68 not upgraded.
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:50.867 :: Need to get 16.4 MB of archives.
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:50.869 :: After this operation, 55.1 MB of additional disk space will be used.
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:50.869 :: Get:1 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpython3.10-minimal amd64 3.10.6-1~22.04.2 [810 kB]
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:53.273 :: Get:2 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 zlib1g amd64 1:1.2.11.dfsg-2ubuntu9.2 [58.4 kB]
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:53.284 :: Get:3 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 python3.10-minimal amd64 3.10.6-1~22.04.2 [2251 kB]
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:53.919 :: Get:4 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 python3-minimal amd64 3.10.6-1~22.04 [24.3 kB]
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:53.954 :: Get:5 http://archive.ubuntu.com/ubuntu jammy/main amd64 media-types all 7.0.0 [25.5 kB]
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:53.962 :: Get:6 http://archive.ubuntu.com/ubuntu jammy/main amd64 libmpdec3 amd64 2.5.1-2build2 [86.8 kB]
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:53.968 :: Get:7 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpython3.10-stdlib amd64 3.10.6-1~22.04.2 [1832 kB]
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:54.278 :: Get:8 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 python3.10 amd64 3.10.6-1~22.04.2 [497 kB]
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:54.351 :: Get:9 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpython3-stdlib amd64 3.10.6-1~22.04 [6910 B]
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:54.373 :: Get:10 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 python3 amd64 3.10.6-1~22.04 [22.8 kB]
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:54.380 :: Get:11 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libexpat1-dev amd64 2.4.7-1ubuntu0.2 [147 kB]
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:54.863 :: Get:12 http://archive.ubuntu.com/ubuntu jammy/main amd64 libjs-jquery all 3.6.0+dfsg+~3.5.13-1 [321 kB]
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:56.166 :: Get:13 http://archive.ubuntu.com/ubuntu jammy/main amd64 libjs-underscore all 1.13.2~dfsg-2 [118 kB]
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:56.233 :: Get:14 http://archive.ubuntu.com/ubuntu jammy/main amd64 libjs-sphinxdoc all 4.3.2-1 [139 kB]
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:56.307 :: Get:15 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpython3.10 amd64 3.10.6-1~22.04.2 [1955 kB]
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:56.923 :: Get:16 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 zlib1g-dev amd64 1:1.2.11.dfsg-2ubuntu9.2 [164 kB]
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:56.936 :: Get:17 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpython3.10-dev amd64 3.10.6-1~22.04.2 [4755 kB]
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:57.794 :: Get:18 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpython3-dev amd64 3.10.6-1~22.04 [7166 B]
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:57.808 :: Get:19 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 python3.10-dev amd64 3.10.6-1~22.04.2 [507 kB]
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:57.851 :: Get:20 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 python3-lib2to3 all 3.10.6-1~22.04 [77.6 kB]
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:57.857 :: Get:21 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 python3-distutils all 3.10.6-1~22.04 [139 kB]
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:57.879 :: Get:22 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 python3-dev amd64 3.10.6-1~22.04 [26.0 kB]
+2023-02-23 06:15:53.315 :: 2023-02-23 11:04:58.599 :: Get:23 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 python3-pip-whl all 22.0.2+dfsg-1ubuntu0.1 [1679 kB]
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:01.450 :: Get:24 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 python3-setuptools-whl all 59.6.0-1.2ubuntu0.22.04.1 [788 kB]
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:01.575 :: Get:25 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 python3.10-venv amd64 3.10.6-1~22.04.2 [5722 B]
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:01.578 :: Get:26 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 python3-venv amd64 3.10.6-1~22.04 [1038 B]
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:02.355 :: Fetched 16.4 MB in 11s (1446 kB/s)
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:02.510 :: Selecting previously unselected package libpython3.10-minimal:amd64.
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:02.623 :: (Reading database ... 15318 files and directories currently installed.)
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:02.625 :: Preparing to unpack .../libpython3.10-minimal_3.10.6-1~22.04.2_amd64.deb ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:02.633 :: Unpacking libpython3.10-minimal:amd64 (3.10.6-1~22.04.2) ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:03.057 :: Preparing to unpack .../zlib1g_1%3a1.2.11.dfsg-2ubuntu9.2_amd64.deb ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:03.067 :: Unpacking zlib1g:amd64 (1:1.2.11.dfsg-2ubuntu9.2) over (1:1.2.11.dfsg-2ubuntu9) ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:03.122 :: Setting up zlib1g:amd64 (1:1.2.11.dfsg-2ubuntu9.2) ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:03.183 :: Selecting previously unselected package python3.10-minimal.
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:03.205 :: (Reading database ... 15603 files and directories currently installed.)
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:03.206 :: Preparing to unpack .../python3.10-minimal_3.10.6-1~22.04.2_amd64.deb ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:03.226 :: Unpacking python3.10-minimal (3.10.6-1~22.04.2) ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:03.391 :: Setting up libpython3.10-minimal:amd64 (3.10.6-1~22.04.2) ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:03.409 :: Setting up python3.10-minimal (3.10.6-1~22.04.2) ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:05.057 :: Selecting previously unselected package python3-minimal.
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:05.083 :: (Reading database ... 15612 files and directories currently installed.)
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:05.084 :: Preparing to unpack .../0-python3-minimal_3.10.6-1~22.04_amd64.deb ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:05.087 :: Unpacking python3-minimal (3.10.6-1~22.04) ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:05.227 :: Selecting previously unselected package media-types.
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:05.234 :: Preparing to unpack .../1-media-types_7.0.0_all.deb ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:05.239 :: Unpacking media-types (7.0.0) ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:05.334 :: Selecting previously unselected package libmpdec3:amd64.
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:05.337 :: Preparing to unpack .../2-libmpdec3_2.5.1-2build2_amd64.deb ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:05.340 :: Unpacking libmpdec3:amd64 (2.5.1-2build2) ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:05.414 :: Selecting previously unselected package libpython3.10-stdlib:amd64.
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:05.418 :: Preparing to unpack .../3-libpython3.10-stdlib_3.10.6-1~22.04.2_amd64.deb ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:05.421 :: Unpacking libpython3.10-stdlib:amd64 (3.10.6-1~22.04.2) ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:05.798 :: Selecting previously unselected package python3.10.
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:05.799 :: Preparing to unpack .../4-python3.10_3.10.6-1~22.04.2_amd64.deb ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:05.803 :: Unpacking python3.10 (3.10.6-1~22.04.2) ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:05.891 :: Selecting previously unselected package libpython3-stdlib:amd64.
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:05.894 :: Preparing to unpack .../5-libpython3-stdlib_3.10.6-1~22.04_amd64.deb ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:05.903 :: Unpacking libpython3-stdlib:amd64 (3.10.6-1~22.04) ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:05.967 :: Setting up python3-minimal (3.10.6-1~22.04) ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:06.352 :: Selecting previously unselected package python3.
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:06.379 :: (Reading database ... 16012 files and directories currently installed.)
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:06.380 :: Preparing to unpack .../00-python3_3.10.6-1~22.04_amd64.deb ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:06.401 :: Unpacking python3 (3.10.6-1~22.04) ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:06.461 :: Selecting previously unselected package libexpat1-dev:amd64.
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:06.464 :: Preparing to unpack .../01-libexpat1-dev_2.4.7-1ubuntu0.2_amd64.deb ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:06.465 :: Unpacking libexpat1-dev:amd64 (2.4.7-1ubuntu0.2) ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:06.564 :: Selecting previously unselected package libjs-jquery.
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:06.568 :: Preparing to unpack .../02-libjs-jquery_3.6.0+dfsg+~3.5.13-1_all.deb ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:06.589 :: Unpacking libjs-jquery (3.6.0+dfsg+~3.5.13-1) ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:06.664 :: Selecting previously unselected package libjs-underscore.
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:06.668 :: Preparing to unpack .../03-libjs-underscore_1.13.2~dfsg-2_all.deb ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:06.670 :: Unpacking libjs-underscore (1.13.2~dfsg-2) ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:06.721 :: Selecting previously unselected package libjs-sphinxdoc.
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:06.725 :: Preparing to unpack .../04-libjs-sphinxdoc_4.3.2-1_all.deb ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:06.728 :: Unpacking libjs-sphinxdoc (4.3.2-1) ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:06.794 :: Selecting previously unselected package libpython3.10:amd64.
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:06.798 :: Preparing to unpack .../05-libpython3.10_3.10.6-1~22.04.2_amd64.deb ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:06.801 :: Unpacking libpython3.10:amd64 (3.10.6-1~22.04.2) ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:06.985 :: Selecting previously unselected package zlib1g-dev:amd64.
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:06.987 :: Preparing to unpack .../06-zlib1g-dev_1%3a1.2.11.dfsg-2ubuntu9.2_amd64.deb ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:06.990 :: Unpacking zlib1g-dev:amd64 (1:1.2.11.dfsg-2ubuntu9.2) ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:07.070 :: Selecting previously unselected package libpython3.10-dev:amd64.
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:07.073 :: Preparing to unpack .../07-libpython3.10-dev_3.10.6-1~22.04.2_amd64.deb ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:07.077 :: Unpacking libpython3.10-dev:amd64 (3.10.6-1~22.04.2) ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:07.658 :: Selecting previously unselected package libpython3-dev:amd64.
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:07.658 :: Preparing to unpack .../08-libpython3-dev_3.10.6-1~22.04_amd64.deb ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:07.660 :: Unpacking libpython3-dev:amd64 (3.10.6-1~22.04) ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:07.713 :: Selecting previously unselected package python3.10-dev.
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:07.715 :: Preparing to unpack .../09-python3.10-dev_3.10.6-1~22.04.2_amd64.deb ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:07.718 :: Unpacking python3.10-dev (3.10.6-1~22.04.2) ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:07.788 :: Selecting previously unselected package python3-lib2to3.
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:07.790 :: Preparing to unpack .../10-python3-lib2to3_3.10.6-1~22.04_all.deb ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:07.792 :: Unpacking python3-lib2to3 (3.10.6-1~22.04) ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:07.904 :: Selecting previously unselected package python3-distutils.
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:07.907 :: Preparing to unpack .../11-python3-distutils_3.10.6-1~22.04_all.deb ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:07.909 :: Unpacking python3-distutils (3.10.6-1~22.04) ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:08.009 :: Selecting previously unselected package python3-dev.
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:08.014 :: Preparing to unpack .../12-python3-dev_3.10.6-1~22.04_amd64.deb ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:08.016 :: Unpacking python3-dev (3.10.6-1~22.04) ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:08.071 :: Selecting previously unselected package python3-pip-whl.
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:08.071 :: Preparing to unpack .../13-python3-pip-whl_22.0.2+dfsg-1ubuntu0.1_all.deb ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:08.072 :: Unpacking python3-pip-whl (22.0.2+dfsg-1ubuntu0.1) ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:08.156 :: Selecting previously unselected package python3-setuptools-whl.
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:08.159 :: Preparing to unpack .../14-python3-setuptools-whl_59.6.0-1.2ubuntu0.22.04.1_all.deb ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:08.163 :: Unpacking python3-setuptools-whl (59.6.0-1.2ubuntu0.22.04.1) ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:08.232 :: Selecting previously unselected package python3.10-venv.
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:08.235 :: Preparing to unpack .../15-python3.10-venv_3.10.6-1~22.04.2_amd64.deb ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:08.236 :: Unpacking python3.10-venv (3.10.6-1~22.04.2) ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:08.303 :: Selecting previously unselected package python3-venv.
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:08.308 :: Preparing to unpack .../16-python3-venv_3.10.6-1~22.04_amd64.deb ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:08.313 :: Unpacking python3-venv (3.10.6-1~22.04) ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:08.423 :: Setting up media-types (7.0.0) ...
+2023-02-23 06:15:53.315 :: 2023-02-23 11:05:08.502 :: Setting up python3-setuptools-whl (59.6.0-1.2ubuntu0.22.04.1) ...
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:08.515 :: Setting up python3-pip-whl (22.0.2+dfsg-1ubuntu0.1) ...
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:08.524 :: Setting up libexpat1-dev:amd64 (2.4.7-1ubuntu0.2) ...
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:08.543 :: Setting up zlib1g-dev:amd64 (1:1.2.11.dfsg-2ubuntu9.2) ...
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:08.556 :: Setting up libmpdec3:amd64 (2.5.1-2build2) ...
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:08.568 :: Setting up libjs-jquery (3.6.0+dfsg+~3.5.13-1) ...
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:08.606 :: Setting up libjs-underscore (1.13.2~dfsg-2) ...
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:08.638 :: Setting up libpython3.10-stdlib:amd64 (3.10.6-1~22.04.2) ...
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:08.655 :: Setting up libjs-sphinxdoc (4.3.2-1) ...
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:08.693 :: Setting up libpython3-stdlib:amd64 (3.10.6-1~22.04) ...
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:08.708 :: Setting up libpython3.10:amd64 (3.10.6-1~22.04.2) ...
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:08.718 :: Setting up python3.10 (3.10.6-1~22.04.2) ...
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:10.313 :: Setting up python3 (3.10.6-1~22.04) ...
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:10.592 :: Setting up libpython3.10-dev:amd64 (3.10.6-1~22.04.2) ...
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:10.601 :: Setting up python3.10-dev (3.10.6-1~22.04.2) ...
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:10.608 :: Setting up python3-lib2to3 (3.10.6-1~22.04) ...
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:10.790 :: Setting up python3-distutils (3.10.6-1~22.04) ...
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:11.165 :: Setting up libpython3-dev:amd64 (3.10.6-1~22.04) ...
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:11.170 :: Setting up python3.10-venv (3.10.6-1~22.04.2) ...
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:11.277 :: Setting up python3-venv (3.10.6-1~22.04) ...
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:11.291 :: Setting up python3-dev (3.10.6-1~22.04) ...
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:11.303 :: Processing triggers for libc-bin (2.35-0ubuntu3) ...
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:15.508 Found installed version 2.4.7-1ubuntu0.2 for package libexpat1-dev
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:15.508 Found installed version 3.6.0+dfsg+~3.5.13-1 for package libjs-jquery
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:15.508 Found installed version 4.3.2-1 for package libjs-sphinxdoc
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:15.508 Found installed version 1.13.2~dfsg-2 for package libjs-underscore
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:15.508 Found installed version 2.5.1-2build2 for package libmpdec3
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:15.508 Found installed version 3.10.6-1~22.04 for package libpython3-dev
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:15.508 Found installed version 3.10.6-1~22.04 for package libpython3-stdlib
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:15.508 Found installed version 3.10.6-1~22.04.2 for package libpython3.10
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:15.508 Found installed version 3.10.6-1~22.04.2 for package libpython3.10-dev
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:15.508 Found installed version 3.10.6-1~22.04.2 for package libpython3.10-minimal
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:15.509 Found installed version 3.10.6-1~22.04.2 for package libpython3.10-stdlib
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:15.509 Found installed version 7.0.0 for package media-types
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:15.509 Found installed version 3.10.6-1~22.04 for package python3
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:15.509 Found installed version 3.10.6-1~22.04 for package python3-dev
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:15.509 Found installed version 3.10.6-1~22.04 for package python3-distutils
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:15.509 Found installed version 3.10.6-1~22.04 for package python3-lib2to3
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:15.509 Found installed version 3.10.6-1~22.04 for package python3-minimal
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:15.509 Found installed version 22.0.2+dfsg-1ubuntu0.1 for package python3-pip-whl
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:15.509 Found installed version 59.6.0-1.2ubuntu0.22.04.1 for package python3-setuptools-whl
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:15.509 Found installed version 3.10.6-1~22.04 for package python3-venv
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:15.509 Found installed version 3.10.6-1~22.04.2 for package python3.10
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:15.509 Found installed version 3.10.6-1~22.04.2 for package python3.10-dev
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:15.509 Found installed version 3.10.6-1~22.04.2 for package python3.10-minimal
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:15.509 Found installed version 3.10.6-1~22.04.2 for package python3.10-venv
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:15.509 Found installed version 1:1.2.11.dfsg-2ubuntu9.2 for package zlib1g-dev
+2023-02-23 06:15:53.316 :: 2023-02-23 11:05:17.553 Installing snap: gnome-42-2204
+2023-02-23 06:15:53.316 :: 2023-02-23 11:09:07.529 Installing snap: gtk-common-themes
+2023-02-23 06:15:53.316 :: 2023-02-23 11:09:47.150 Installing snap: gnome-42-2204-sdk
+2023-02-23 06:15:53.316 :: 2023-02-23 11:11:57.540 verify plugin environment for part 'copy-stuff'
+2023-02-23 06:15:53.316 :: 2023-02-23 11:11:57.871 verify plugin environment for part 'gnome/sdk'
+2023-02-23 06:15:53.316 :: 2023-02-23 11:11:57.881 verify plugin environment for part 'rubber'
+2023-02-23 06:15:53.316 :: 2023-02-23 11:11:57.935 Executing parts lifecycle: pull copy-stuff
+2023-02-23 06:15:53.316 :: 2023-02-23 11:11:57.946 Executing action
+2023-02-23 06:15:53.316 :: 2023-02-23 11:11:58.094 execute action copy-stuff:Action(part_name='copy-stuff', step=Step.PULL, action_type=ActionType.RUN, reason=None, project_vars=None)
+2023-02-23 06:15:53.316 :: 2023-02-23 11:11:58.747 Executed: pull copy-stuff
+2023-02-23 06:15:53.316 :: 2023-02-23 11:11:58.747 Executing parts lifecycle: pull gnome/sdk
+2023-02-23 06:15:53.316 :: 2023-02-23 11:11:58.747 Executing action
+2023-02-23 06:15:53.316 :: 2023-02-23 11:11:58.753 execute action gnome/sdk:Action(part_name='gnome/sdk', step=Step.PULL, action_type=ActionType.RUN, reason=None, project_vars=None)
+2023-02-23 06:15:53.316 :: 2023-02-23 11:11:58.871 Executed: pull gnome/sdk
+2023-02-23 06:15:53.316 :: 2023-02-23 11:11:58.871 Executing parts lifecycle: pull rubber
+2023-02-23 06:15:53.316 :: 2023-02-23 11:11:58.872 Executing action
+2023-02-23 06:15:53.316 :: 2023-02-23 11:11:58.873 execute action rubber:Action(part_name='rubber', step=Step.PULL, action_type=ActionType.RUN, reason=None, project_vars=None)
+2023-02-23 06:15:53.316 :: 2023-02-23 11:11:58.929 Executed: pull rubber
+2023-02-23 06:15:53.316 :: 2023-02-23 11:11:58.930 Executing parts lifecycle: overlay copy-stuff
+2023-02-23 06:15:53.316 :: 2023-02-23 11:11:58.930 Executing action
+2023-02-23 06:15:53.316 :: 2023-02-23 11:11:58.930 execute action copy-stuff:Action(part_name='copy-stuff', step=Step.OVERLAY, action_type=ActionType.RUN, reason=None, project_vars=None)
+2023-02-23 06:15:53.316 :: 2023-02-23 11:11:58.977 Executed: overlay copy-stuff
+2023-02-23 06:15:53.316 :: 2023-02-23 11:11:58.978 Executing parts lifecycle: overlay gnome/sdk
+2023-02-23 06:15:53.316 :: 2023-02-23 11:11:58.979 Executing action
+2023-02-23 06:15:53.316 :: 2023-02-23 11:11:58.983 execute action gnome/sdk:Action(part_name='gnome/sdk', step=Step.OVERLAY, action_type=ActionType.RUN, reason=None, project_vars=None)
+2023-02-23 06:15:53.316 :: 2023-02-23 11:11:59.012 Executed: overlay gnome/sdk
+2023-02-23 06:15:53.316 :: 2023-02-23 11:11:59.013 Executing parts lifecycle: overlay rubber
+2023-02-23 06:15:53.316 :: 2023-02-23 11:11:59.013 Executing action
+2023-02-23 06:15:53.316 :: 2023-02-23 11:11:59.017 execute action rubber:Action(part_name='rubber', step=Step.OVERLAY, action_type=ActionType.RUN, reason=None, project_vars=None)
+2023-02-23 06:15:53.316 :: 2023-02-23 11:11:59.047 Executed: overlay rubber
+2023-02-23 06:15:53.316 :: 2023-02-23 11:11:59.048 Executing parts lifecycle: build copy-stuff
+2023-02-23 06:15:53.316 :: 2023-02-23 11:11:59.049 Executing action
+2023-02-23 06:15:53.316 :: 2023-02-23 11:11:59.049 execute action copy-stuff:Action(part_name='copy-stuff', step=Step.BUILD, action_type=ActionType.RUN, reason=None, project_vars=None)
+2023-02-23 06:15:53.316 :: 2023-02-23 11:11:59.063 load state file: /root/parts/copy-stuff/state/pull
+2023-02-23 06:15:53.316 :: 2023-02-23 11:11:59.132 remove directory /root/parts/copy-stuff/build
+2023-02-23 06:15:53.316 :: 2023-02-23 11:11:59.234 :: + cp --archive --link --no-dereference . /root/parts/copy-stuff/install
+2023-02-23 06:15:53.316 :: 2023-02-23 11:12:02.035 Executed: build copy-stuff
+2023-02-23 06:15:53.316 :: 2023-02-23 11:12:02.036 Executing parts lifecycle: build gnome/sdk
+2023-02-23 06:15:53.316 :: 2023-02-23 11:12:02.036 Executing action
+2023-02-23 06:15:53.316 :: 2023-02-23 11:12:02.037 execute action gnome/sdk:Action(part_name='gnome/sdk', step=Step.BUILD, action_type=ActionType.RUN, reason=None, project_vars=None)
+2023-02-23 06:15:53.316 :: 2023-02-23 11:12:02.038 load state file: /root/parts/gnome/sdk/state/pull
+2023-02-23 06:15:53.316 :: 2023-02-23 11:12:02.048 remove directory /root/parts/gnome/sdk/build
+2023-02-23 06:15:53.316 :: 2023-02-23 11:12:02.085 :: + make -j2
+2023-02-23 06:15:53.316 :: 2023-02-23 11:12:02.101 :: make: 'Makefile' is up to date.
+2023-02-23 06:15:53.316 :: 2023-02-23 11:12:02.101 :: + make -j2 install DESTDIR=/root/parts/gnome/sdk/install
+2023-02-23 06:15:53.316 :: 2023-02-23 11:12:02.105 :: install -D -m755 "hooks-configure-fonts" "/root/parts/gnome/sdk/install/snap/command-chain"/"hooks-configure-fonts"
+2023-02-23 06:15:53.316 :: 2023-02-23 11:12:02.105 :: install -D -m755 "desktop-launch" "/root/parts/gnome/sdk/install/snap/command-chain"/"desktop-launch"
+2023-02-23 06:15:53.316 :: 2023-02-23 11:12:02.128 :: install -D -m755 "run" "/root/parts/gnome/sdk/install/snap/command-chain"/"run"
+2023-02-23 06:15:53.316 :: 2023-02-23 11:12:03.270 Executed: build gnome/sdk
+2023-02-23 06:15:53.316 :: 2023-02-23 11:12:03.271 Executing parts lifecycle: build rubber
+2023-02-23 06:15:53.316 :: 2023-02-23 11:12:03.271 Executing action
+2023-02-23 06:15:53.316 :: 2023-02-23 11:12:03.272 execute action rubber:Action(part_name='rubber', step=Step.BUILD, action_type=ActionType.RUN, reason=None, project_vars=None)
+2023-02-23 06:15:53.316 :: 2023-02-23 11:12:03.273 load state file: /root/parts/rubber/state/pull
+2023-02-23 06:15:53.316 :: 2023-02-23 11:12:03.284 remove directory /root/parts/rubber/build
+2023-02-23 06:15:53.316 :: 2023-02-23 11:12:03.333 :: + python3 -m venv /root/parts/rubber/install
+2023-02-23 06:15:53.316 :: 2023-02-23 11:12:19.598 :: + PARTS_PYTHON_VENV_INTERP_PATH=/root/parts/rubber/install/bin/python3
+2023-02-23 06:15:53.316 :: 2023-02-23 11:12:19.598 :: + pip install -U https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-22.04/wxPython-4.2.0-cp310-cp310-linux_x86_64.whl wxasync
+2023-02-23 06:15:53.316 :: 2023-02-23 11:12:24.896 :: Defaulting to user installation because normal site-packages is not writeable
+2023-02-23 06:15:53.316 :: 2023-02-23 11:12:25.363 :: Collecting wxPython==4.2.0
+2023-02-23 06:15:53.316 :: 2023-02-23 11:12:27.103 ::   Downloading https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-22.04/wxPython-4.2.0-cp310-cp310-linux_x86_64.whl (146.4 MB)
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:05.904 ::      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 146.4/146.4 MB 789.6 kB/s eta 0:00:00
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:06.329 :: Collecting wxasync
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:06.574 ::   Downloading wxasync-0.48-py3-none-any.whl (4.4 kB)
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:07.228 :: Collecting numpy
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:07.253 ::   Downloading numpy-1.24.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.3 MB)
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:09.990 ::      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.3/17.3 MB 6.1 MB/s eta 0:00:00
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:10.591 :: Collecting pillow
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:10.617 ::   Downloading Pillow-9.4.0-cp310-cp310-manylinux_2_28_x86_64.whl (3.4 MB)
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:11.137 ::      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.4/3.4 MB 6.5 MB/s eta 0:00:00
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:11.195 :: Collecting six
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:11.221 ::   Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:11.331 :: Installing collected packages: six, pillow, numpy, wxPython, wxasync
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:15.059 ::   WARNING: The scripts f2py, f2py3 and f2py3.10 are installed in '/root/.local/bin' which is not on PATH.
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:15.059 ::   Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:26.790 ::   WARNING: The scripts helpviewer, img2png, img2py, img2xpm, pycrust, pyshell, pyslices, pyslicesshell, pywxrc, wxdemo, wxdocs and wxget are installed in '/root/.local/bin' which is not on PATH.
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:26.790 ::   Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:26.823 :: Successfully installed numpy-1.24.2 pillow-9.4.0 six-1.16.0 wxPython-4.2.0 wxasync-0.48
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:26.823 :: WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:27.091 :: + pip install -U -r /root/project/requirements.txt
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:30.219 :: Defaulting to user installation because normal site-packages is not writeable
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:30.732 :: Collecting requests
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:30.982 ::   Downloading requests-2.28.2-py3-none-any.whl (62 kB)
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:31.047 ::      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.8/62.8 KB 1.0 MB/s eta 0:00:00
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:31.125 :: Collecting attrdict3
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:31.157 ::   Downloading attrdict3-2.0.2-py2.py3-none-any.whl (10 kB)
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:31.164 :: Requirement already satisfied: wxasync in /root/.local/lib/python3.10/site-packages (from -r /root/project/requirements.txt (line 11)) (0.48)
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:31.322 :: Collecting idna<4,>=2.5
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:31.343 ::   Downloading idna-3.4-py3-none-any.whl (61 kB)
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:31.363 ::      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.5/61.5 KB 4.6 MB/s eta 0:00:00
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:31.429 :: Collecting certifi>=2017.4.17
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:31.450 ::   Downloading certifi-2022.12.7-py3-none-any.whl (155 kB)
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:31.472 ::      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 155.3/155.3 KB 8.9 MB/s eta 0:00:00
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:31.565 :: Collecting urllib3<1.27,>=1.21.1
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:31.589 ::   Downloading urllib3-1.26.14-py2.py3-none-any.whl (140 kB)
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:31.604 ::      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 140.6/140.6 KB 10.9 MB/s eta 0:00:00
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:31.774 :: Collecting charset-normalizer<4,>=2
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:31.796 ::   Downloading charset_normalizer-3.0.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (198 kB)
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:31.821 ::      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 198.8/198.8 KB 10.0 MB/s eta 0:00:00
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:31.826 :: Requirement already satisfied: six in /root/.local/lib/python3.10/site-packages (from attrdict3->-r /root/project/requirements.txt (line 4)) (1.16.0)
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:31.828 :: Requirement already satisfied: wxpython in /root/.local/lib/python3.10/site-packages (from wxasync->-r /root/project/requirements.txt (line 11)) (4.2.0)
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:31.864 :: Requirement already satisfied: numpy in /root/.local/lib/python3.10/site-packages (from wxpython->wxasync->-r /root/project/requirements.txt (line 11)) (1.24.2)
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:31.865 :: Requirement already satisfied: pillow in /root/.local/lib/python3.10/site-packages (from wxpython->wxasync->-r /root/project/requirements.txt (line 11)) (9.4.0)
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:31.975 :: Installing collected packages: charset-normalizer, urllib3, idna, certifi, attrdict3, requests
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:32.046 ::   WARNING: The script normalizer is installed in '/root/.local/bin' which is not on PATH.
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:32.050 ::   Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:32.505 :: Successfully installed attrdict3-2.0.2 certifi-2022.12.7 charset-normalizer-3.0.1 idna-3.4 requests-2.28.2 urllib3-1.26.14
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:32.505 :: WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:32.675 :: + '[' -f setup.py ']'
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:32.676 :: + xargs -0 sed -i '1 s|^#\!/root/parts/rubber/install/bin/python3.*$|#\!/usr/bin/env python3|'
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:32.677 :: + find /root/parts/rubber/install -type f -executable -print0
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:32.771 :: ++ determine_link_target
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:32.775 :: +++ set +o +x
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:32.776 :: +++ grep xtrace
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:32.818 :: ++ opts_state='set -o xtrace'
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:32.819 :: +++ dirname /root/parts/rubber/install/bin/python3
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:32.825 :: ++ interp_dir=/root/parts/rubber/install/bin
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:32.826 :: +++ which python3
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:32.850 :: ++ python_path=/snap/gnome-42-2204-sdk/current/usr/bin/python3
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:32.851 :: +++ readlink -e /snap/gnome-42-2204-sdk/current/usr/bin/python3
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:32.861 :: ++ python_path=/snap/gnome-42-2204-sdk/67/usr/bin/python3.10
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:32.861 :: ++ for dir in "/root/parts/rubber/install" "/root/stage"
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:32.862 :: ++ echo /snap/gnome-42-2204-sdk/67/usr/bin/python3.10
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:32.862 :: ++ grep -q /root/parts/rubber/install
+2023-02-23 06:15:53.316 :: 2023-02-23 11:15:32.873 :: ++ for dir in "/root/parts/rubber/install" "/root/stage"
+2023-02-23 06:15:53.317 :: 2023-02-23 11:15:32.874 :: ++ echo /snap/gnome-42-2204-sdk/67/usr/bin/python3.10
+2023-02-23 06:15:53.317 :: 2023-02-23 11:15:32.874 :: ++ grep -q /root/stage
+2023-02-23 06:15:53.317 :: 2023-02-23 11:15:32.881 :: ++ echo /snap/gnome-42-2204-sdk/67/usr/bin/python3.10
+2023-02-23 06:15:53.317 :: 2023-02-23 11:15:32.881 :: ++ eval 'set -o xtrace'
+2023-02-23 06:15:53.317 :: 2023-02-23 11:15:32.881 :: +++ set -o xtrace
+2023-02-23 06:15:53.317 :: 2023-02-23 11:15:32.881 :: + python_path=/snap/gnome-42-2204-sdk/67/usr/bin/python3.10
+2023-02-23 06:15:53.317 :: 2023-02-23 11:15:32.881 :: + ln -sf /snap/gnome-42-2204-sdk/67/usr/bin/python3.10 /root/parts/rubber/install/bin/python3
+2023-02-23 06:15:53.317 :: 2023-02-23 11:15:34.102 Executed: build rubber
+2023-02-23 06:15:53.317 :: 2023-02-23 11:15:34.104 Executing parts lifecycle: stage copy-stuff
+2023-02-23 06:15:53.317 :: 2023-02-23 11:15:34.104 Executing action
+2023-02-23 06:15:53.317 :: 2023-02-23 11:15:34.106 execute action copy-stuff:Action(part_name='copy-stuff', step=Step.STAGE, action_type=ActionType.RUN, reason=None, project_vars=None)
+2023-02-23 06:15:53.317 :: 2023-02-23 11:15:34.692 Executed: stage copy-stuff
+2023-02-23 06:15:53.317 :: 2023-02-23 11:15:34.693 Executing parts lifecycle: stage gnome/sdk
+2023-02-23 06:15:53.317 :: 2023-02-23 11:15:34.694 Executing action
+2023-02-23 06:15:53.317 :: 2023-02-23 11:15:34.695 execute action gnome/sdk:Action(part_name='gnome/sdk', step=Step.STAGE, action_type=ActionType.RUN, reason=None, project_vars=None)
+2023-02-23 06:15:53.317 :: 2023-02-23 11:15:35.237 Executed: stage gnome/sdk
+2023-02-23 06:15:53.317 :: 2023-02-23 11:15:35.238 Executing parts lifecycle: stage rubber
+2023-02-23 06:15:53.317 :: 2023-02-23 11:15:35.238 Executing action
+2023-02-23 06:15:53.317 :: 2023-02-23 11:15:35.239 execute action rubber:Action(part_name='rubber', step=Step.STAGE, action_type=ActionType.RUN, reason=None, project_vars=None)
+2023-02-23 06:15:53.317 :: 2023-02-23 11:15:36.913 Executed: stage rubber
+2023-02-23 06:15:53.317 :: 2023-02-23 11:15:36.914 Executing parts lifecycle: prime copy-stuff
+2023-02-23 06:15:53.317 :: 2023-02-23 11:15:36.915 Executing action
+2023-02-23 06:15:53.317 :: 2023-02-23 11:15:36.915 execute action copy-stuff:Action(part_name='copy-stuff', step=Step.PRIME, action_type=ActionType.RUN, reason=None, project_vars=None)
+2023-02-23 06:15:53.317 :: 2023-02-23 11:15:36.944 Executed: prime copy-stuff
+2023-02-23 06:15:53.317 :: 2023-02-23 11:15:36.945 Executing parts lifecycle: prime gnome/sdk
+2023-02-23 06:15:53.317 :: 2023-02-23 11:15:36.946 Executing action
+2023-02-23 06:15:53.317 :: 2023-02-23 11:15:36.947 execute action gnome/sdk:Action(part_name='gnome/sdk', step=Step.PRIME, action_type=ActionType.RUN, reason=None, project_vars=None)
+2023-02-23 06:15:53.317 :: 2023-02-23 11:15:36.968 Executed: prime gnome/sdk
+2023-02-23 06:15:53.317 :: 2023-02-23 11:15:36.968 Executing parts lifecycle: prime rubber
+2023-02-23 06:15:53.317 :: 2023-02-23 11:15:36.969 Executing action
+2023-02-23 06:15:53.317 :: 2023-02-23 11:15:36.969 execute action rubber:Action(part_name='rubber', step=Step.PRIME, action_type=ActionType.RUN, reason=None, project_vars=None)
+2023-02-23 06:15:53.317 :: 2023-02-23 11:15:39.753 Executed: prime rubber
+2023-02-23 06:15:53.317 :: 2023-02-23 11:15:39.754 Executed parts lifecycle
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:39.754 Extracting and updating metadata...
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:39.823 Copying snap assets...
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:39.841 finalize icon: None
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:39.841 relative icon path: None
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:39.841 Generating snap metadata...
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:39.857 Determining the version from the project repo (version: git).
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:40.084 Version has been set to 'v1.94+git4.0dbf56f'
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:40.106 Generated snap metadata
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:40.107 Reading snap metadata...
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:40.124 Running linters...
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:40.125 Running linter: classic
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:40.126 Running linter: library
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:44.281 Determining the version from the project repo (version: git).
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:44.320 Version has been set to 'v1.94+git4.0dbf56f'
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:44.321 pack_snap: output=None, compression='xz'
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:44.321 pack_snap: check skeleton
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:45.268 Creating snap package...
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:45.289 Pack command: ['snap', 'pack', '--filename', 'rubberband_v1.94+git4.0dbf56f_amd64.snap', '--compression', 'xz', PosixPath('/root/prime'), PosixPath('/root/project')]
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:45.370 Cannot pack snap file: Command '['snap', 'pack', '--filename', 'rubberband_v1.94+git4.0dbf56f_amd64.snap', '--compression', 'xz', PosixPath('/root/prime'), PosixPath('/root/project')]' returned non-zero exit status 1. (2023/02/23 11:15:45.362729 container.go:215: in snap "rubberband": path "python3" does not exist
+2023-02-23 06:15:53.320 :: error: cannot pack "/root/prime": snap is unusable due to missing files)
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:45.406 Traceback (most recent call last):
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:45.406   File "/snap/snapcraft/8619/lib/python3.8/site-packages/snapcraft/pack.py", line 134, in pack_snap
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:45.406     proc = subprocess.run(
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:45.406   File "/snap/snapcraft/8619/usr/lib/python3.8/subprocess.py", line 516, in run
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:45.406     raise CalledProcessError(retcode, process.args,
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:45.406 subprocess.CalledProcessError: Command '['snap', 'pack', '--filename', 'rubberband_v1.94+git4.0dbf56f_amd64.snap', '--compression', 'xz', PosixPath('/root/prime'), PosixPath('/root/project')]' returned non-zero exit status 1.
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:45.406
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:45.406 During handling of the above exception, another exception occurred:
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:45.406 Traceback (most recent call last):
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:45.406   File "/snap/snapcraft/8619/lib/python3.8/site-packages/snapcraft/parts/lifecycle.py", line 284, in _run_command
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:45.406     _run_lifecycle_and_pack(
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:45.406   File "/snap/snapcraft/8619/lib/python3.8/site-packages/snapcraft/parts/lifecycle.py", line 354, in _run_lifecycle_and_pack
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:45.406     snap_filename = pack.pack_snap(
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:45.406   File "/snap/snapcraft/8619/lib/python3.8/site-packages/snapcraft/pack.py", line 141, in pack_snap
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:45.406     raise errors.SnapcraftError(msg)
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:45.406 snapcraft.errors.SnapcraftError: Cannot pack snap file: Command '['snap', 'pack', '--filename', 'rubberband_v1.94+git4.0dbf56f_amd64.snap', '--compression', 'xz', PosixPath('/root/prime'), PosixPath('/root/project')]' returned non-zero exit status 1. (2023/02/23 11:15:45.362729 container.go:215: in snap "rubberband": path "python3" does not exist
+2023-02-23 06:15:53.320 :: 2023-02-23 11:15:45.406 error: cannot pack "/root/prime": snap is unusable due to missing files)
+2023-02-23 06:15:56.595 Failed to execute pack in instance.
+2023-02-23 06:15:56.606 Detailed information: Run the same command again with --debug to shell into the environment if you wish to introspect this failure.
+2023-02-23 06:15:56.880 Traceback (most recent call last):
+2023-02-23 06:15:56.880   File "/snap/snapcraft/8619/lib/python3.8/site-packages/snapcraft/parts/lifecycle.py", line 552, in _run_in_provider
+2023-02-23 06:15:56.880     instance.execute_run(cmd, check=True, cwd=output_dir)
+2023-02-23 06:15:56.880   File "/snap/snapcraft/8619/lib/python3.8/site-packages/craft_providers/lxd/lxd_instance.py", line 289, in execute_run
+2023-02-23 06:15:56.880     return self.lxc.exec(
+2023-02-23 06:15:56.880   File "/snap/snapcraft/8619/lib/python3.8/site-packages/craft_providers/lxd/lxc.py", line 329, in exec
+2023-02-23 06:15:56.880     return runner(final_cmd, **kwargs)  # pylint: disable=subprocess-run-check
+2023-02-23 06:15:56.880   File "/snap/snapcraft/8619/usr/lib/python3.8/subprocess.py", line 516, in run
+2023-02-23 06:15:56.880     raise CalledProcessError(retcode, process.args,
+2023-02-23 06:15:56.880 subprocess.CalledProcessError: Command '['lxc', '--project', 'snapcraft', 'exec', 'local:snapcraft-rubberband-on-amd64-for-amd64-11274383', '--cwd', '/root/project', '--', 'env', 'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin', 'SNAPCRAFT_MANAGED_MODE=1', 'snapcraft', 'pack', '--verbosity=brief', '--build-for', 'amd64']' returned non-zero exit status 1.
+2023-02-23 06:15:56.880 Full execution log: '/home/andy/.cache/snapcraft/log/snapcraft-20230223-055147.305643.log'
